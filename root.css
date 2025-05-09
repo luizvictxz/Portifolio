@@ -1,0 +1,14 @@
+:root {
+    --cor-de-fundo: #f4f4f4;
+    --cor-de-fundo-escura: #333;
+
+    --cor-da-fonte: #333;
+    --font-padrão: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    --cor-comp-padrão: #007bff;
+    --cor-comp-hover: #0056b3;
+    --cor-var-padrão: #28a745;
+    --cor-var-hover: #1e7e34;
+
+    --cor-da-hero: #e9ecef;
+}

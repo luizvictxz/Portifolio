@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Nome - Desenvolvedor Full-Stack</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#competencias">Competências</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Olá! sou João Vitor</h1>
+                <p>Desenvolvedor Front-end e Web Designer apaixonado por criar soluções inovadoras.</p>
+                <a href="#projetos" class="button">Ver Projetos</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="about">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <p>...</p>
+            </div>
+        </section>
+
+        <section id="projetos" class="projects">
+            <h2 class="section-title">Meus Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-reveal="fadeInUp">
+                    <img src="placeholder.jpg" alt="Projeto 1">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto e tecnologias utilizadas.</p>
+                    <a href="#" target="_blank">Ver Detalhes</a>
+                    <a href="https://github.com/seuusuario/projeto1" target="_blank">GitHub</a>
+                </div>
+                </div>
+        </section>
+
+        <section id="competencias" class="skills">
+            <h2 class="section-title">Competências</h2>
+            <div class="skills-list">
+                <div class="skill" data-reveal="fadeInLeft">
+                    <span>HTML</span>
+                    <div class="progress-bar"><div style="width: 90%;"></div></div>
+                </div>
+                </div>
+        </section>
+
+        <section id="contato" class="contact">
+            <h2 class="section-title">Contato</h2>
+            <div class="contact-form">
+                <button>clique aqui</button>
+                <input type="text">
+                <input type="email">
+                <textarea name="msg" id="textmsg"></textarea>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Seu Nome. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        ScrollReveal({ reset: true });
+        ScrollReveal().reveal('.hero-content', { delay: 500, origin: 'bottom', distance: '50px' });
+        ScrollReveal().reveal('.section-title', { delay: 300, origin: 'top', distance: '30px' });
+        ScrollReveal().reveal('.project-card', { interval: 200 });
+        ScrollReveal().reveal('.skill', { interval: 150 });
+    </script>
+</body>
+</html>
