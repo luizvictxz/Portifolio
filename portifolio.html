@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Nome - Desenvolvedor Full-Stack</title>
+    <title>Luiz - Desenvolvedor Full-Stack</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -16,15 +18,17 @@
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#competencias">Competências</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li class="button-default"><a href="#">Download CV</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
-                <h1>Olá! sou João Vitor</h1>
-                <p>Desenvolvedor Front-end e Web Designer apaixonado por criar soluções inovadoras.</p>
+                <h1>Olá! sou Luiz</h1>
+                <p>Desenvolvedor Full-Stack</p>
                 <a href="#projetos" class="button">Ver Projetos</a>
             </div>
         </section>
@@ -46,7 +50,7 @@
                     <a href="#" target="_blank">Ver Detalhes</a>
                     <a href="https://github.com/seuusuario/projeto1" target="_blank">GitHub</a>
                 </div>
-                </div>
+            </div>
         </section>
 
         <section id="competencias" class="skills">
@@ -54,19 +58,21 @@
             <div class="skills-list">
                 <div class="skill" data-reveal="fadeInLeft">
                     <span>HTML</span>
-                    <div class="progress-bar"><div style="width: 90%;"></div></div>
+                    <div class="progress-bar">
+                        <div style="width: 90%;"></div>
+                    </div>
                 </div>
-                </div>
+            </div>
         </section>
 
         <section id="contato" class="contact">
-            <h2 class="section-title">Contato</h2>
-            <div class="contact-form">
-                <button>clique aqui</button>
-                <input type="text">
-                <input type="email">
-                <textarea name="msg" id="textmsg"></textarea>
-            </div>
+            <h2 class="section-title" id="contact-title">Contato</h2>
+            <form action="" class="contact-form">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea name="msg" id="textmsg" placeholder="Message"></textarea>
+                <button id="button-form">clique aqui</button>
+            </form>
         </section>
     </main>
 
@@ -82,4 +88,5 @@
         ScrollReveal().reveal('.skill', { interval: 150 });
     </script>
 </body>
+
 </html>
