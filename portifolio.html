@@ -34,15 +34,31 @@
         </section>
 
         <section id="sobre" class="about">
-            <h2 class="section-title">Sobre Mim</h2>
+            <h3 class="section-subtitle">Sobre Mim</h3>
             <div class="about-content">
                 <p>...</p>
             </div>
         </section>
 
         <section id="projetos" class="projects">
-            <h2 class="section-title">Meus Projetos</h2>
+            <h3 class="section-subtitle">Meus Projetos</h3>
             <div class="projects-grid">
+                <div class="project-card" data-reveal="fadeInUp">
+                    <img src="placeholder.jpg" alt="Projeto 1">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto e tecnologias utilizadas.</p>
+                    <a href="#" target="_blank">Ver Detalhes</a>
+                    <a href="https://github.com/seuusuario/projeto1" target="_blank">GitHub</a>
+                </div>
+
+                <div class="project-card" data-reveal="fadeInUp">
+                    <img src="placeholder.jpg" alt="Projeto 1">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto e tecnologias utilizadas.</p>
+                    <a href="#" target="_blank">Ver Detalhes</a>
+                    <a href="https://github.com/seuusuario/projeto1" target="_blank">GitHub</a>
+                </div>
+
                 <div class="project-card" data-reveal="fadeInUp">
                     <img src="placeholder.jpg" alt="Projeto 1">
                     <h3>Projeto 1</h3>
@@ -54,24 +70,111 @@
         </section>
 
         <section id="competencias" class="skills">
-            <h2 class="section-title">Competências</h2>
+            <h3 class="section-subtitle">Competências</h3>
+            <h2 class="section-title">My Expetise</h2>
             <div class="skills-list">
                 <div class="skill" data-reveal="fadeInLeft">
-                    <span>HTML</span>
-                    <div class="progress-bar">
-                        <div style="width: 90%;"></div>
+                    <div class="skill-level">
+                        <div class="skill-with-icon">
+                            <img src="icons/python.png" alt="python">
+                            <h4>Python</h4>
+                        </div>
+                        <span>Nivel: Avançado</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="skill-with-icon">
+                            <img src="icons/flask.png" alt="flask">
+                            <h4>Flask</h4>
+                        </div>
+                        <span>Nivel: Intermediário</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="skill-with-icon">
+                            <img src="icons/django.png" alt="django">
+                            <h4>Django</h4>
+                        </div>
+                        <span>Nivel: Intermediário</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="skill-with-icon">
+                            <img src="icons/html.png" alt="html">
+                            <h4>HTML</h4>
+                        </div>
+                        <span>Nivel: Intermediário</span>
                     </div>
                 </div>
+                <div class="skill">
+                    <div class="skill-level">
+                        <div class="skill-with-icon">
+                            <img src="icons/js.png" alt="js">
+                            <h4>JavaScript</h4>
+                        </div>
+                        <span>Nivel: Intermediário</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="skill-with-icon">
+                            <img src="icons/ts.png" alt="ts">
+                            <h4>TypeScript</h4>
+                        </div>
+                        <span>Nivel: Básico</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="skill-with-icon">
+                            <img src="icons/react.png" alt="react">
+                            <h4>React</h4>
+                        </div>
+                        <span>Nivel: Básico</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="skill-with-icon">
+                            <img src="icons/css.png" alt="css">
+                            <h4>CSS</h4>
+                        </div>
+                        <span>Nivel: Básico</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-level">
+                        <div class="skill-with-icon">
+                            <img src="icons/linux.png" alt="linux">
+                            <h4>Linux</h4>
+                        </div>
+                        <span>Nivel: Básico</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="skill-with-icon">
+                            <img src="icons/aws.png" alt="aws">
+                            <h4>AWS</h4>
+                        </div>
+                        <span>Cursando</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="skill-with-icon">
+                            <img src="icons/docker.png" alt="docker">
+                            <h4>Docker</h4>
+                        </div>
+                        <span>Nivel: Básico</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="skill-with-icon">
+                            <img src="icons/c.png" alt="c">
+                            <h4>Linguagem C</h4>
+                        </div>
+                        <span>Nivel: Básico</span>
+                    </div>
+                </div>
+
             </div>
         </section>
 
         <section id="contato" class="contact">
-            <h2 class="section-title" id="contact-title">Contato</h2>
+            <h3 class="section-subtitle">Contato</h3>
+            <h2 class="section-title">Send Me a Message</h2>
             <form action="" class="contact-form">
                 <input type="text" placeholder="Name">
                 <input type="email" placeholder="Email">
                 <textarea name="msg" id="textmsg" placeholder="Message"></textarea>
-                <button id="button-form">clique aqui</button>
+                <button id="button-form">SEND MESSAGE</button>
             </form>
         </section>
     </main>
@@ -83,7 +186,8 @@
     <script>
         ScrollReveal({ reset: true });
         ScrollReveal().reveal('.hero-content', { delay: 500, origin: 'bottom', distance: '50px' });
-        ScrollReveal().reveal('.section-title', { delay: 300, origin: 'top', distance: '30px' });
+        ScrollReveal().reveal('.section-subtitle', { delay: 300, origin: 'top', distance: '30px' });
+        ScrollReveal().reveal('.section-title', { delay: 300, origin: "bottom", distance: "30px" })
         ScrollReveal().reveal('.project-card', { interval: 200 });
         ScrollReveal().reveal('.skill', { interval: 150 });
     </script>
