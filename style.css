@@ -97,6 +97,20 @@ section {
   margin: 0 auto;
 }
 
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+.about p {
+  max-width: 500px;
+  text-align: justify;
+  text-indent: 30px;
+}
+.about img {
+  object-fit: cover;
+  max-width: 500px;
+}
+
 .button {
   display: inline-block;
   background-color: var(--cor-comp-padrão);
@@ -130,8 +144,7 @@ section {
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   padding: 20px;
   text-align: left;
-  transition: transform 0.3s ease-in-out;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
 }
 .project-card h3 {
   margin-top: 0;

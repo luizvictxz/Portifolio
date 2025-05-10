@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luiz - Desenvolvedor Full-Stack</title>
+    <title>Luiz Victor- Desenvolvedor Full-Stack</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
@@ -34,10 +34,21 @@
         </section>
 
         <section id="sobre" class="about">
-            <h3 class="section-subtitle">Sobre Mim</h3>
             <div class="about-content">
-                <p>...</p>
+                <h3 class="section-subtitle">Sobre Mim</h3>
+                <h2 class="section-title">Quem sou eu?</h2>
+                <p>Sou um profissional dedicado e entusiasta por tecnologia, com experiência em manutenção de sistemas,
+                    configuração de redes e desenvolvimento de soluções automatizadas. Tenho me especializado em
+                    desenvolvimento web, atuando na criação de aplicações modernas, escaláveis e bem estruturadas,
+                    utilizando tecnologias como Python, JavaScript, Flask, Django, React e AWS. <br><br>
+                    Possuo também vivência
+                    em ambientes colaborativos, contribuindo ativamente na resolução de problemas e na liderança de
+                    pequenas equipes. Estou em constante evolução, buscando aprimorar minhas habilidades técnicas e
+                    entregar soluções eficientes que agreguem valor aos projetos e à experiência do usuário.
+
+                </p>
             </div>
+            <img class="my-picture" src="imgs/image copy.png" alt="">
         </section>
 
         <section id="projetos" class="projects">
@@ -192,11 +203,13 @@
 
     <script>
         ScrollReveal({ reset: true });
-        ScrollReveal().reveal('.hero-content', { delay: 500, origin: 'bottom', distance: '50px' });
+        ScrollReveal().reveal('.hero-content', { delay: 400, origin: 'bottom', distance: '50px' });
         ScrollReveal().reveal('.section-subtitle', { delay: 300, origin: 'top', distance: '30px' });
         ScrollReveal().reveal('.section-title', { delay: 300, origin: "bottom", distance: "30px" })
         ScrollReveal().reveal('.project-card', { interval: 200 });
         ScrollReveal().reveal('.skill', { interval: 150 });
+        ScrollReveal().reveal('.my-picture', { delay: 400, origin: 'left', distance: '50px' })
+
     </script>
 </body>
 
